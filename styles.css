@@ -1,0 +1,98 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5%;
+}
+
+header {
+  text-align: center;
+}
+
+figure {
+  display:flex;
+  flex-direction: column;
+  width:90vw;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  padding:2rem;
+  text-align: center;
+}
+
+.piano-keys {
+  list-style: none;
+  display:flex;
+  height:8rem;
+}
+.keys {
+  display:flex;
+}
+.white,
+.black {
+  outline: 1px solid black;
+  display:inline-block;
+  box-shadow: 0px 0px 4px black;
+}
+
+.black {
+  background-color:black;
+  height: 6rem;
+  width:1rem;
+  position:absolute;
+  margin-left:1.5rem;
+  z-index:2;
+}
+
+.white {
+  background-color:white;
+  width:2rem;
+}
+
+.white:hover,
+.black:hover {
+  transform:translateY(1px);
+  cursor:pointer;
+}
+
+
+footer {
+  position:fixed;
+  right:0;
+  top:20%;
+  text-align: center;
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+}
+
+footer span {
+  width:fit-content;
+  background:black;
+  box-shadow: 0px 0px 4px black;
+  padding:1rem;
+  color:white;
+  border-radius: 0.1rem;
+  opacity:70%;
+}
+
+footer span:hover {
+  opacity:100%;
+  cursor:pointer;
+}
+
+#joy {
+  cursor: url('images/joy.png'), crosshair;
+}
+
+.sheet-music {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
