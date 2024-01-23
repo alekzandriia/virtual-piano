@@ -8,6 +8,19 @@ for (const key of keys) {
   });
 } 
 
+const modal = document.querySelector('.modal')
+const openBtn = document.querySelector('.open')
+
+openBtn.addEventListener('click', () => {
+  modal.showModal()
+})
+
+const closeBtn = document.querySelector('.close')
+
+closeBtn.addEventListener('click', () => {
+  modal.close()
+})
+
 
 
 

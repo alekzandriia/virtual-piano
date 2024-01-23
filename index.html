@@ -1,113 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keyboard</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<body>
-  <header>
-    <h1>Virtual Keyboard</h1>
-    <p>Shout out to <a href="https://en.wikipedia.org/wiki/Bartolomeo_Cristofori">Bartolomeo Cristofori</a> for inventing the first physical piano in 1700.</p>
-    <p>This piano is all 1s and 0s. Go ahead and play a song. :)</p>
-  </header>
-  <main>
-    <figure>
-      <h2 id="tickle-the-ivories">Tickle the Ivories</h2>
-      <div id="piano">
-        <div class="piano-wrapper">
-          <ul class="piano-keys">
-            <li class="keys">
-              <span data-key="01" title = "C" class="white key"></span>
-              <span data-key="02" title = "C#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="03" title = "D" class="white key"></span>
-              <span data-key="04" title = "D#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="05" title = "E" class="white key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="06" title = "F" class="white key"></span>
-              <span data-key="07" title = "F#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="08" title = "G" class="white key"></span>
-              <span data-key="09" title = "G#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="10" title = "A" class="white key"></span>
-              <span data-key="11" title = "A#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="12" title = "B" class="white key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="13" title = "2C" class="white key"></span>
-              <span data-key="14" title = "2C#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="15" title = "2D" class="white key"></span>
-              <span data-key="16" title = "2D#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="17" title = "2E" class="white key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="18" title = "2F" class="white key"></span>
-              <span data-key="19" title = "2F#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="20" title = "2G" class="white key"></span>
-              <span data-key="21" title = "2G#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="22" title = "2A" class="white key"></span>
-              <span data-key="23" title = "2A#" class="black key"></span>
-            </li>
-            <li class="keys">
-              <span data-key="24" title = "2B" class="white key"></span>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Virtual Keyboard</h1>
+      <div class="info">
+        <p>This piano is all 1s and 0s. Go ahead and play a song!</p>
+        <hr />
+        <p>
+          Made with &hearts;,
+          <a href="http://www.alekzandriia.com">Alex O'Reilly</a>
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="marquee-wrapper">
+        <div class="marquee">
+          <p>
+            Shout out to
+            <a href="https://en.wikipedia.org/wiki/Bartolomeo_Cristofori"
+              >Bartolomeo Cristofori</a
+            >
+            for inventing the first physical piano in 1700.
+          </p>
         </div>
       </div>
-    <figcaption>
-      <i>Figure 1: This virtual keyboard has 24 keys. The music notes are MP3 files sourced from the <a href="https://archive.org/details/24-piano-keys ">Internet Archive</a>.</i>
-    </figcaption>
-  </figure>
-    <section class="design">
-      <h2>Keys</h2>
-      <p>The number of keys on a keyboard or piano varies between models.</p>
-      <ul>
-        <li>A standard piano has 88 keys, 52 white and 36 black. </li>
-        <li>A standard keyboard has 61 keys, 36 white and 25 black. </li>
-      </ul>
-      <p>Regardless of the total number, boards are configured in a pattern of repeating seven white keys and five black keys.</p>
-      <p>Each iteration encompasses a full octave, and contains one key for each of the notes in the Western musical scale</p>
-    </section>
-    <section class="facts">
-      <h2>Misc</h2>
-      <ul>
-        <li>The <a href="https://www.classicfm.com/music-news/pictures/worlds-biggest-grand-piano-ventspils-latvia/">world's largest piano</a> is 15ft tall, it's so big that you need to climb a flight of stairs to play it.</li>
-        <li>LEGO released a 3,622-piece <a href="https://www.lego.com/en-ca/product/grand-piano-21323">model</a> of a grand piano that plays beautiful <a href="https://www.youtube.com/watch?v=qgg61no1Hm4&t=156s">music</a>. </li>
-        <li>The piano was originally called the pianoforte, referring to the instruments ability to play both loud (forte) and soft (piano) notes.</li>
-        <li>Pianos keys were once made with ivory. Hence the phrase <a href="#tickle-the-ivories">"tickle the ivories."</a> Fortunately, that fell out of fashion (because ivory is porous and easily dirties, not because PETA stepped in). </li>
-        <li><a href="https://joshuarosspiano.com/why-does-piano-have-black-and-white-keys/">Nobody actually knows</a> why piano keys are black and white.</li>
-      </ul>
-    </section>
-    <section class="sheet-music">
-      <h2>Ode to Joy</h2>
-      <iframe src="files/ode-to-joy-sheet-music.pdf" frameborder="0" width="500px" height="650px"></iframe>
-    </section>
-
-  </main>
-  <footer>
-    <span>Made with 💖 by <a href="https://twitter.com/alekzandriia">Alekz</a></span>
-  </footer>
-  <script src="app.js"></script>
-</body>
+      <figure class="piano">
+        <h2 id="tickle-the-ivories">Tickle the Ivories</h2>
+        <div>
+          <div class="piano-wrapper">
+            <ul class="piano-keys">
+              <li class="keys">
+                <span data-key="01" title="C" class="white key"></span>
+                <span data-key="02" title="C#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="03" title="D" class="white key"></span>
+                <span data-key="04" title="D#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="05" title="E" class="white key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="06" title="F" class="white key"></span>
+                <span data-key="07" title="F#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="08" title="G" class="white key"></span>
+                <span data-key="09" title="G#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="10" title="A" class="white key"></span>
+                <span data-key="11" title="A#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="12" title="B" class="white key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="13" title="2C" class="white key"></span>
+                <span data-key="14" title="2C#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="15" title="2D" class="white key"></span>
+                <span data-key="16" title="2D#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="17" title="2E" class="white key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="18" title="2F" class="white key"></span>
+                <span data-key="19" title="2F#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="20" title="2G" class="white key"></span>
+                <span data-key="21" title="2G#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="22" title="2A" class="white key"></span>
+                <span data-key="23" title="2A#" class="black key"></span>
+              </li>
+              <li class="keys">
+                <span data-key="24" title="2B" class="white key"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <figcaption>
+          <p>
+            Figure 1: This keyboard has 24 keys. The music notes are MP3 files
+            sourced from the
+            <a href="https://archive.org/details/24-piano-keys "
+              >Internet Archive</a
+            >.
+          </p>
+        </figcaption>
+      </figure>
+      <section class="design card">
+        <h2>Keys</h2>
+        <p>The number of keys on a keyboard or piano varies between models.</p>
+        <ul>
+          <li>A standard piano has 88 keys, 52 white and 36 black.</li>
+          <li>A standard keyboard has 61 keys, 36 white and 25 black.</li>
+        </ul>
+        <p>
+          Regardless of the total number, boards are configured in a pattern of
+          repeating seven white keys and five black keys.
+        </p>
+        <p>
+          Each iteration encompasses a full octave, and contains one key for
+          each of the notes in the Western musical scale
+        </p>
+      </section>
+      <section class="facts card">
+        <h2>Misc</h2>
+        <ul>
+          <li>
+            The
+            <a
+              href="https://www.classicfm.com/music-news/pictures/worlds-biggest-grand-piano-ventspils-latvia/"
+              >world's largest piano</a
+            >
+            is 15ft tall, it's so big that you need to climb a flight of stairs
+            to play it.
+          </li>
+          <li>
+            LEGO released a 3,622-piece
+            <a href="https://www.lego.com/en-ca/product/grand-piano-21323"
+              >model</a
+            >
+            of a grand piano that plays beautiful
+            <a href="https://www.youtube.com/watch?v=qgg61no1Hm4&t=156s"
+              >music</a
+            >.
+          </li>
+          <li>
+            The piano was originally called the pianoforte, referring to the
+            instruments ability to play both loud (forte) and soft (piano)
+            notes.
+          </li>
+          <li>
+            Pianos keys were once made with ivory. Hence the phrase
+            <a href="#tickle-the-ivories">"tickle the ivories."</a> Fortunately,
+            that fell out of fashion (because ivory is porous and easily
+            dirties, not because PETA stepped in).
+          </li>
+          <li>
+            <a
+              href="https://joshuarosspiano.com/why-does-piano-have-black-and-white-keys/"
+              >Nobody actually knows</a
+            >
+            why piano keys are black and white.
+          </li>
+        </ul>
+        <button class="open">Sheet music</button>
+        <dialog class="modal">
+          <button class="close">X</button>
+          <iframe
+            src="files/ode-to-joy-sheet-music.pdf"
+            frameborder="0"
+            id="embed"
+          ></iframe>
+        </dialog>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
